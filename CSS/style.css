@@ -741,6 +741,65 @@ section{
    background-color: var(--main-color);
 }
 
+/* FAQ in contact file */
+
+/* --- ផ្នែក FAQ កែប្រែថ្មី --- */
+
+.faq .box-container{
+   display: flex;
+   flex-wrap: wrap;
+   gap: 2rem;
+   align-items: flex-start;
+}
+
+.faq .box-container .box{
+   flex: 1 1 40rem;
+   box-shadow: var(--box-shodow);
+}
+
+.faq .box-container .box h3{
+   padding: 1.5rem 2rem;
+   font-size: 2rem;
+   background-color: var(--black);
+   color: var(--white);
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 1rem;
+   cursor: pointer;
+}
+
+/* ១. កែប្រែត្រង់នេះ៖ លាក់អក្សរ <p> ទុកជាមុនសិន */
+.faq .box-container .box p{
+   font-size: 1.6rem;
+   color: var(--light-color);
+   background-color: var(--white);
+   padding: 1.5rem 2rem;
+   line-height: 1.5;
+   display: none; /* លាក់អក្សរ */
+}
+
+/* ២. បង្ហាញអក្សរ <p> មកវិញនៅពេល click (មាន class .active) */
+.faq .box-container .box.active p{
+   display: block; 
+}
+
+/* ៣. ប្តូរពណ៌ក្បាល FAQ ទៅជាពណ៌ក្រហមពេលវា active */
+.faq .box-container .box.active h3{
+   background-color: var(--main-color);
+}
+
+/* ៤. បន្ថែម៖ បង្វិលរូបព្រួញឡើងលើវិញនៅពេលវា active */
+.faq .box-container .box.active h3 i{
+   transform: rotate(180deg);
+   transition: .2s linear;
+}
+
+.faq .box-container .box h3 i{
+   transition: .2s linear;
+}
+/* FAQ in contact ends */
+
 .filters form{
    background-color: var(--white);
    box-shadow: var(--box-shodow);
