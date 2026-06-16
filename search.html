@@ -93,12 +93,218 @@
                 <p>enter location</p>
                 <input type="text" name="location" required maxlength="50" placeholder="enter city name" class="input">
             </div>\
+            <div class="box">
+                <p>offer type</p>
+                <select name="offer" class="input" required>
+                    <option value="sale">sale</option>
+                    <option value="resale">resale</option>
+                    <option value="rent">rent</option>
+                </select>
+            </div>
 
-            
+            <div class="box">
+                <p>property type</p>
+                <select name="type" class="input" required>
+                    <option value="flat">flat</option>
+                    <option value="house">house</option>
+                    <option value="shop">shop</option>
+                </select>
+            </div>
+
+            <div class="box">
+
+                <!-- BHK bathroom hall kitchent -->
+                <p>how many BHK</p>
+                <select name="bhk" class="input" required>
+                    <option value="1">1 BHK</option>
+                    <option value="2">2 BHK</option>
+                    <option value="3">3 BHK</option>
+                    <option value="4">4 BHK</option>
+                    <option value="5">5 BHK</option>
+                    <option value="6">6 BHK</option>
+                    <option value="7">7 BHK</option>
+                    <option value="8">8 BHK</option>
+                    <option value="9">9 BHK</option>
+                </select>
+            </div>
+
+            <div class="box">
+                <p>minimum budget</p>
+                    <select name="minimum" class="input" required>
+                        <option value="2000"> $2,000</option>
+                        <option value="3000"> $3,000</option>
+                        <option value="4000"> $4,000</option>
+                        <option value="5000"> $5,000</option>
+                        <option value="8000"> $8,000</option>
+                        <option value="10000"> $10,000</option>
+                        <option value="12000"> $12,000</option>
+                        <option value="15000"> $15,000</option>
+                        <option value="20000"> $20,000</option>
+                        <option value="25000"> $25,000</option>
+                        <option value="30000"> $30,000</option>
+                        <option value="40000"> $40,000</option>
+                        <option value="50000"> $50,000</option>
+                        <option value="60000"> $60,000</option>
+                        <option value="70000"> $70,000</option>
+                        <option value="80000"> $80,000</option>
+                        <option value="90000"> $90,000</option>
+                        <option value="100000"> $100,000</option>
+                        <option value="110000"> $110,000</option>
+                        <option value="120000"> $120,000</option>
+                        <option value="130000"> $130,000</option>
+                        <option value="140000"> $140,000</option>
+                        <option value="150000"> $150,000</option>
+                        <option value="200000"> $200,000</option>
+                        <option value="500000"> $500,000</option>
+                    </select>
+                </div>
+            <div class="box">
+                <p>maximum budget <span>*</span></p>
+                <select name="minimum" class="input" required>
+                    <option value="2000"> $2,000</option>
+                    <option value="3000"> $3,000</option>
+                    <option value="4000"> $4,000</option>
+                    <option value="5000"> $5,000</option>
+                    <option value="8000"> $8,000</option>
+                    <option value="10000"> $10,000</option>
+                    <option value="12000"> $12,000</option>
+                    <option value="15000"> $15,000</option>
+                    <option value="20000"> $20,000</option>
+                    <option value="25000"> $25,000</option>
+                    <option value="30000"> $30,000</option>
+                    <option value="40000"> $40,000</option>
+                    <option value="50000"> $50,000</option>
+                    <option value="60000"> $60,000</option>
+                    <option value="70000"> $70,000</option>
+                    <option value="80000"> $80,000</option>
+                    <option value="90000"> $90,000</option>
+                    <option value="100000"> $100,000</option>
+                    <option value="110000"> $110,000</option>
+                    <option value="120000"> $120,000</option>
+                    <option value="130000"> $130,000</option>
+                    <option value="140000"> $140,000</option>
+                    <option value="150000"> $150,000</option>
+                    <option value="200000"> $200,000</option>
+                    <option value="500000"> $500,000</option>
+                </select>
+            </div>
+
+            <div class="box">
+                <p>status</p>
+                <select name="status" class="input" required>
+                    <option value="ready to move">ready to move</option>
+                    <option value="under construction">under constuction</option>
+                </select>
+            </div>
+            <div class="box">
+                <p>furnished</p>
+                <select name="furnished" class="input" required>
+                    <option value="unfurnished">unfurnished</option>
+                    <option value="furnished">furnished</option>
+                    <option value="semi-furnished">semi-furnished</option>
+                </select>
+            </div>    
         </div>
+        <input type="submit" value="search property" name="search" class="btn">
     </form>
- </section>
+</section>
 
+<!-- search filter section ends -->
+<div id="filter-btn" class="fas fa-filter"></div>
+
+
+<!-- listings section starts -->
+
+<section class="listings">
+    <h1 class="heading">searched results</h1>
+    <div class="box-container">
+        <div class="box">
+            <div class="admin">
+                <h3>V</h3>
+            
+                <div>
+                    <p>Villa</p>
+                    <span>20/05/2026</span>
+                </div> 
+            </div>
+    
+            <div class="thumb">
+                <p class="total-images"><i class="far fa-image"></i><span>4</span></p>
+                <p class="type"><span>house</span><span>sale</span></p>
+                <form action="" method="post" class="save">
+                    <button type="submmit" name="save" class="far fa-heart"></button>
+                </form>
+                <img src="images/house-img-1.webp" alt="">
+            </div>
+            <h3 class="name">modern flats and appartments</h3>
+            <p class="location"><i class="fas fa-map-marker-alt"></i><span>phnom penh, cambodia</span></p>
+            <div class="flex">
+                <p><i class="fas fa-bed"></i><span>3</span></p>
+                <p><i class="fas fa-bath"></i><span>2</span></p>
+                <p><i class="fas fa-car"></i><span>1</span></p>
+                <p><i class="fas fa-maximize"></i><span>120 m²</span></p>
+            </div>
+            <a href="view_property.html" class="btn">view property</a>
+        </div>
+
+        <div class="box">
+            <div class="admin">
+                <h3>V</h3>
+            
+                <div>
+                    <p>Villa Queen</p>
+                    <span>20/05/2026</span>
+                </div> 
+            </div>
+    
+            <div class="thumb">
+                <p class="total-images"><i class="far fa-image"></i><span>4</span></p>
+                <p class="type"><span>house</span><span>sale</span></p>
+                <form action="" method="post" class="save">
+                    <button type="submmit" name="save" class="far fa-heart"></button>
+                </form>
+                <img src="images/house-img-2.webp" alt="">
+            </div>
+            <h3 class="name">modern flats and appartments</h3>
+            <p class="location"><i class="fas fa-map-marker-alt"></i><span>phnom penh, cambodia</span></p>
+            <div class="flex">
+                <p><i class="fas fa-bed"></i><span>3</span></p>
+                <p><i class="fas fa-bath"></i><span>2</span></p>
+                <p><i class="fas fa-car"></i><span>1</span></p>
+                <p><i class="fas fa-maximize"></i><span>120 m²</span></p>
+            </div>
+            <a href="view_property.html" class="btn">view property</a>
+        </div>
+
+        <div class="box">
+            <div class="admin">
+                <h3>V</h3>
+            
+                <div>
+                    <p>Villa King</p>
+                    <span>20/05/2026</span>
+                </div> 
+            </div>
+    
+            <div class="thumb">
+                <p class="total-images"><i class="far fa-image"></i><span>4</span></p>
+                <p class="type"><span>house</span><span>sale</span></p>
+                <form action="" method="post" class="save">
+                    <button type="submmit" name="save" class="far fa-heart"></button>
+                </form>
+                <img src="images/house-img-3.webp" alt="">
+            </div>
+            <h3 class="name">modern flats and appartments</h3>
+            <p class="location"><i class="fas fa-map-marker-alt"></i><span>phnom penh, cambodia</span></p>
+            <div class="flex">
+                <p><i class="fas fa-bed"></i><span>3</span></p>
+                <p><i class="fas fa-bath"></i><span>2</span></p>
+                <p><i class="fas fa-car"></i><span>1</span></p>
+                <p><i class="fas fa-maximize"></i><span>120 m²</span></p>
+            </div>
+            <a href="view_property.html" class="btn">view property</a>
+        </div>
+</section>
 <!-- footer section starts -->
 
 <footer class="footer">
